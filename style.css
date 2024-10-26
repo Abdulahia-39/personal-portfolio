@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 95%;
+    margin: auto;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8),rgba(4, 9, 30, 0.7)),url(images/pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+nav{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+nav span{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+}
+
+header .text{
+    text-align: center;
+    color: white;
+}
+
+header .text h1, h2, p, .icons, button{
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+header .text .icons a{
+    padding: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+header .text .icons a:visited, header .text .icons a:active{
+    color: white;
+}
+
+header .text .icons a:hover{
+    position: relative;
+    bottom: 4px;
+}
+
+header figure{
+    width: 400;
+    height: 280;
+    border-radius: 15px;
+}
+
+header figure img{
+    border-radius: 15px;
+}
+
+header .text button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all .5s ease;
+}
+
+header .text button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.projects{
+    color: white;
+    text-align: center;
+}
+
+.projects h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 30px 0;
+}
+
+.projects .cards p, .projects .cards h3{
+    margin: 30px 0;
+}
+
+.card{
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 0 25px 25px 20px;
+    background-image: linear-gradient(black, rgb(49, 49, 49));
+    min-height: 280px;
+    max-height: 400px;
+}
+
+.card:hover{
+    position: relative;
+    bottom: 2px;
+}
+
+.card a{
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.card .text{
+    height: 65%;
+}
+
+.card h3{
+    color: rgb(133, 201, 170);
+}
+
+.aboutMe{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    margin: 15% 0;
+}
+
+.aboutMe .meText h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutMe .meText p{
+    padding: 0 10%;
+    letter-spacing: .5px;
+    line-height: 2.2;
+    margin-top: 25px;
+}
+
+.aboutMe .education h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutMe .education .part{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px 15px;
+}
+
+.aboutMe .education .part h3, .aboutMe .education .part h4{
+    margin: 8px 0;
+    color: rgb(133, 201, 170);
+}
+
+.aboutMe .education .part p{
+    letter-spacing: .5px;
+    line-height: 2;
+}
+
+.mySkills{
+    color: white;
+    text-align: center;
+    margin: 17% 0 25% 0;
+}
+
+.mySkills .skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 50px;
+}
+
+.mySkills .skills .skill{
+    border: 2px solid rgb(133, 201, 170);
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.mySkills .skills .skill:hover{
+    color: rgb(133, 201, 170);
+    border: 2px solid white;
+}
+
+.contact{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .header{
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.contact .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 7% 0;
+}
+
+.contact .container .text{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.contact .container .text h2, h3, p, .icons, button{
+    padding: .5em 0;
+}
+
+.contact .container .text .icons a{
+    padding: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+.contact .container .text button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contact .container .text button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contact .contactarea{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+.contact .contactarea textarea{
+    height: 350px;
+    width: 600px;
+    background-color: transparent;
+    margin: 20px 0;
+    color: white;
+}
+
+.contact .contactarea input{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contact .contactarea input:hover{
+    background-color: white;
+    color: black;
+}
